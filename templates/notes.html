@@ -12,14 +12,18 @@
     <li class="note">
       <div class="header">
         <div class="avatar">
-          <img src="{{ config.extra.profile }}" alt="{{ config.extra.username }}">
+          <img src="{{ config.extra.profile }}" alt="user profile">
         </div>
-        <p class="username">{{ config.username }}
-          {% if page.state %}
-          <span>{{ page.state }} | hi</span>
+        <div class="line">
+          <p class="username">{{ config.extra.username }}
+            {% if page.state %}
+            <span>{{ page.state }}</span>
+            {% endif %}
+          </p>
+          {% if page.date %}
+          <p>{{ page.date }}</p>
           {% endif %}
-        </p>
-        <p>{{ page.date }}</p>
+        </div>
       </div>
       <div class="content">
         {{ page.content | safe }}

@@ -181,6 +181,17 @@ footer {
   border-radius: 50%;
   border: rgb(253, 242, 248) solid 2px;
 }
+.note .header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.note .header .username {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
 .note .content {
   margin-left: 50px;
 }
