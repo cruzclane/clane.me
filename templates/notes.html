@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  {{ section.title }}
+</h1>
+
+<ul>
+  <!-- If you are using pagination, section.pages will be empty.
+       You need to use the paginator object -->  
+  {% for page in section.pages %}
+    <li class="note">
+      <div class="header">
+        <div class="avatar">
+          <img src="{{ config.extra.profile }}" alt="{{ config.extra.username }}">
+        </div>
+        <p class="username">{{ config.username }}
+          {% if page.state %}
+          <span>{{ page.state }} | hi</span>
+          {% endif %}
+        </p>
+        <p>{{ page.date }}</p>
+      </div>
+      <div class="content">
+        {{ page.content | safe }}
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock content %}

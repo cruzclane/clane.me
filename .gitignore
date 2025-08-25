@@ -1,0 +1,6 @@
+/public
+/content/draft
+
+.DS_Store
+Thumbs.db
+*.swp

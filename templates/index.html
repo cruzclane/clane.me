@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}首页 | {{ config.title }}{% endblock %}
+
+{% block content %}
+  <h1>欢迎来到 {{ config.title }}</h1>
+
+  {% set posts = get_section(path="posts/_index.md") %}
+  <ul>
+    {% for page in posts.pages %}
+      <li>
+        <a href="{{ page.permalink }}">{{ page.title }}</a>
+        <span>{{page.date}}</span>
+      </li>
+      {% if page.summary %}
+      <div class="summary">
+        <p>{{page.summary | safe}}</p>
+        <a href="{{ page.permalink }}">Read more</a>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endblock %}
