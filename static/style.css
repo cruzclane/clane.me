@@ -111,7 +111,12 @@ ol {
   /* list-style: inside; */
   padding-left: 2ch;
 }
-
+article {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
 .main .title {
   padding-bottom: 1rem;
 }
@@ -152,32 +157,20 @@ ol {
   display: flex;
   flex-direction: column;
 }
+/* index-post */
 
-/* .content {
-  padding-bottom: 5rem;
-} */
-
-footer {
-  /* display: flex;
-  justify-content: center; */
-  margin: 2rem 0;
-  /* text-align: center; */
-  color: var(--muted-color);
-
-  li {
-    list-style: '\003E'outside;
-  }
-}
-.note {
+/* nots.html */
+.note,
+.post-list {
   background-color: white;
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
   margin: 1rem 0;
+  border-radius: 0.5rem;
   list-style: none;
 }
 .note .avatar {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: rgb(253, 242, 248) solid 2px;
 }
@@ -187,11 +180,25 @@ footer {
   gap: 1rem;
   margin-bottom: 0.5rem;
 }
-.note .header .username {
-  font-weight: 600;
+.note .header .line {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+.note .header .username {
+  font-size: large;
+  line-height: 0;
 }
 .note .content {
   margin-left: 50px;
+}
+
+/* header */
+.header {
+  margin: 1rem 0.5rem;
+}
+.header nav {
+  font-size: large;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
 }

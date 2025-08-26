@@ -21,7 +21,9 @@
             {% endif %}
           </p>
           {% if page.date %}
-          <p>{{ page.date }}</p>
+          <p class="date"><a href="{{ page.permalink | safe }}">
+            {{ page.date }}
+          </a></p>
           {% endif %}
         </div>
       </div>
