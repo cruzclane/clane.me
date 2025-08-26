@@ -3,10 +3,10 @@ title: Zola 无法引入 style.css
 aliases:
 date: 2025-08-25
 tags:
+# Zola 无法引入 style.css
 ---
 
-**问题描述：**  
-在 Zola 中引入 CSS、JS、图片等静态资源时，结果浏览器报 404，资源无法加载。
+> 在 Zola 中引入 CSS、JS、图片等静态资源时，结果浏览器报 404，资源无法加载。
 
 <!-- more -->
 
@@ -27,14 +27,13 @@ your-zola-site/
 ├── content/
 ├── templates/
 └── static/
-     └── css/
-         └── style.css
+     └── style.css
 ```
 
 2. HTML 引入：
 
 ```html
-<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/style.css" />
 ```
 
 > 注意：路径从网站根开始，不要写 `static/`。
