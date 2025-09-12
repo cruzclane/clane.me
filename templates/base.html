@@ -8,22 +8,25 @@
         {{ config.title }}
       {% endblock title %}
     </title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/classless.styles.css">
+    <link rel="stylesheet" href="/tailwind.styles.css">
     <link rel="stylesheet" href="/icons8/css/line-awesome.min.css">
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <a href="/">Home</a>
-        <a href="/notes/">Note</a>
-        <a href="/posts/">Blog</a>
-      </nav>
-    </header>
-    <section>
-      <div class="container">
+    <nav class="flex">
+      <a class='grow' href="/">clane</a>
+      <a href="https://github.com/clane" data-text="GitHub"><i class="lab la-github"></i></a>
+      <a href="/notes" data-text="Notes"><i class="las la-sticky-note"></i></a>
+      <a href="/posts" data-text="Blog"><i class="las la-blog"></i></a>
+    </nav>
+    <main>
         {% block content %}
-        {% endblock content %}
-      </div>
-    </section>
+        {% endblock %}
+    </main>
+    <hr>
+    <footer class="flex justify-around">
+      <p>© 2023 clane</p>
+      <p>All rights reserved.</p>
+    </footer>
   </body>
 </html>
