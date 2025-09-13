@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Posts</h1>
+<h1 class="gray">Posts</h1>
 {% set posts = get_section(path="posts/_index.md") %}
 <ul>
   {% for page in posts.pages %}
@@ -19,9 +19,7 @@
 </ul>
 
 {% set notes = get_section(path="notes/_index.md") %}
-<h1 class="gray">
-  {{ notes.title }}
-</h1>
+<h1 class="gray">Notes</h1>
 
 <ul>
   <!-- If you are using pagination, section.pages will be empty.
