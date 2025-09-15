@@ -5,7 +5,7 @@ date: 2025-08-25
 tags:
 # Zola 无法引入 style.css
 ---
-
+    
 > 在 Zola 中引入 CSS、JS、图片等静态资源时，结果浏览器报 404，资源无法加载。
 
 <!-- more -->
