@@ -1,6 +1,6 @@
 # The URL the site will be built for
 title = "Clane's Notes"
-base_url = "https://shinechn.pages.dev/"
+base_url = "https://clane.pages.dev/"
 description = "An area where to store my ideas and notes."
 
 # Whether to automatically compile all Sass files in the sass directory

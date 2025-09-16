@@ -1,11 +1,9 @@
 ---
 title: Zola 无法引入 style.css
-aliases:
 date: 2025-08-25
 tags:
-# Zola 无法引入 style.css
 ---
-    
+
 > 在 Zola 中引入 CSS、JS、图片等静态资源时，结果浏览器报 404，资源无法加载。
 
 <!-- more -->
@@ -52,4 +50,3 @@ zola serve
 
 - 任何放在 `static/` 的文件，都以 `/` 开头引用。
 - 如果有子目录，也按网站根路径引用，例如 `/images/logo.png`。
-- 避免把路径写成 `static/...` 或相对路径容易踩坑。
